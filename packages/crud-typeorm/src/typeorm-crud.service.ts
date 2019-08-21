@@ -692,6 +692,10 @@ export class TypeOrmCrudService<T> extends CrudService<T> {
         params = {};
         break;
 
+      case 'intersects':
+        str = `ST_Intersects(${field}, ST_GeomFromGeoJSON(:${param}))`;
+        break;
+
       case 'between':
         /* istanbul ignore if */
         if (!Array.isArray(cond.value) || !cond.value.length || cond.value.length !== 2) {

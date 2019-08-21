@@ -34,6 +34,7 @@ export const comparisonOperatorsList = [
   'isnull',
   'notnull',
   'between',
+  'intersects',
 ];
 export const sortOrdersList = ['ASC', 'DESC'];
 

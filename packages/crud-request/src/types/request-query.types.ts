@@ -31,7 +31,8 @@ export type ComparisonOperator =
   | 'notin'
   | 'isnull'
   | 'notnull'
-  | 'between';
+  | 'between'
+  | 'intersects';
 
 export enum CondOperator {
   EQUALS = 'eq',
